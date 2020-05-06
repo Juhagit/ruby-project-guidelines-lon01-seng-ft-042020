@@ -294,7 +294,7 @@ end
 
 def update_username
     system"clear"
-    puts "Pleas type your new Username"
+    puts "Please type your new Username"
 
     new_username = gets.chomp
 
