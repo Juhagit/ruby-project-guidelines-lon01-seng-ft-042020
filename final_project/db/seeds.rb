@@ -1,0 +1,18 @@
+customer_1 = Customer.create(username: "Juha", password: "qwerty", balance: 40.00)
+customer_2 = Customer.create(username: "Manuel", password: "abc123", balance: 10.00)
+customer_3 = Customer.create(username: "Alfonso", password: "1234", balance: 0.00)
+customer_4 = Customer.create(username: "Samantha", password: "a123 ", balance: 13.00)
+customer_5 = Customer.create(username: "Carolina", password: "uy1234", balance: 20.00)
+customer_6 = Customer.create(username: "Jhon", password: "kaja123", balance: 2.00)
+customer_7 = Customer.create(username: "Jukisz", password: "mercy123", balance: 24.00)
+
+game_1 = Game.create(title: "Pubg",  genre: "survival", price: 30.00, customer_id: customer_1.id)
+game_2 = Game.create(title: "Far Cry",  genre: "fps", price: 40.00, customer_id: customer_1.id)
+game_3 = Game.create(title: "Rocket League",  genre: "racing", price: 20.00, customer_id: customer_3.id)
+game_4 = Game.create(title: "Call of Duty",  genre: "fps", price: 60.00, customer_id: customer_3.id)
+game_5 = Game.create(title: "Civilization",  genre: "strategy", price: 45.00, customer_id: customer_4.id)
+
+receipt_1 = Receipt.create(game_id: game_1.id, customer_id: customer_1.id, total_price: 30.00)
+receipt_2 = Receipt.create(game_id: game_2.id, customer_id: customer_2.id, total_price: 40.00)
+receipt_3 = Receipt.create(game_id: game_3.id, customer_id: customer_3.id, total_price: 20.00)
+receipt_4 = Receipt.create(game_id: game_4.id, customer_id: customer_4.id, total_price: 20.00)  
